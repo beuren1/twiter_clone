@@ -20,86 +20,92 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
+      <div className="app-wrapper">
+        <Routes>
+          <Route path="/" element={<Login />} />
 
-        <Route
-          path="/cadastro"
-          element={<Register />}
-        />
+          <Route
+            path="/cadastro"
+            element={<Register />}
+          />
 
-        <Route
-          path="/feed"
-          element={
-            <ProtectedRoute>
-              <Feed />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/feed"
+            element={
+              <ProtectedRoute>
+                <Feed />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/novo-post"
-          element={
-            <ProtectedRoute>
-              <CreatePost />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/novo-post"
+            element={
+              <ProtectedRoute>
+                <CreatePost />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/perfil"
-          element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/perfil"
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/editar-perfil"
-          element={
-            <ProtectedRoute>
-              <EditProfile />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/editar-perfil"
+            element={
+              <ProtectedRoute>
+                <EditProfile />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/alterar-senha"
-          element={
-            <ProtectedRoute>
-              <ChangePassword />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/alterar-senha"
+            element={
+              <ProtectedRoute>
+                <ChangePassword />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/editar-post/:id"
-          element={
-            <ProtectedRoute>
-              <EditPost />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/editar-post/:id"
+            element={
+              <ProtectedRoute>
+                <EditPost />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/usuarios"
-          element={
-            <ProtectedRoute>
-              <Users />
-            </ProtectedRoute>
-          }
-        />
+          <Route
+            path="/usuarios"
+            element={
+              <ProtectedRoute>
+                <Users />
+              </ProtectedRoute>
+            }
+          />
 
-        <Route
-          path="/conexoes"
-          element={
-            <ProtectedRoute>
-              <Connections />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
+          <Route
+            path="/conexoes"
+            element={
+              <ProtectedRoute>
+                <Connections />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+
+        <footer className="footer">
+          © 2026 Josué Beuren • Desenvolvido durante o curso da EBAC
+        </footer>
+      </div>
     </BrowserRouter>
   );
 }

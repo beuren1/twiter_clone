@@ -91,3 +91,24 @@ h3,
 p {
   margin-top: 0;
 }
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrapper>.page {
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+}
