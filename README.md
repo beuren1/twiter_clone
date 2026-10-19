@@ -6,6 +6,16 @@ O objetivo do projeto é simular uma rede social inspirada no Twitter/X, permiti
 
 ## Tecnologias utilizadas
 
+## Deploy
+
+### Back-end
+
+https://twiter-clone-dthx.onrender.com
+
+### Front-end
+
+https://twiter-clone-smoky.vercel.app
+
 ### Back-end
 - Python
 - Django
